@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+<script defer src="main.js"></script></head>
+<body>
+    <header>
+        <h1>
+            <img src="./src/assets/pet.svg" alt="">
+            MUNDO PET
+        </h1>
+    </header>
+
+    <main>
+        <article>
+            <form id="date-schedule">
+                <div class="title-wrap">
+                    <h1>Sua agenda</h1>
+                    <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+                </div>
+
+                <input type="date" name="date-schedule" id="date-schedule">
+            </form>
+
+            <section id="morning-schedules">
+                <div class="header-schedule">
+                    <div>
+                        <img src="./src/assets/sunset.svg" alt="Nascer do Nol">
+                        <h2>Manhã</h2>
+                    </div>
+
+                    <div>
+                        <strong>09-12h</strong>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <div class="customer-info">
+                        <h3>09:00</h3>
+                        <strong>Thor</strong>
+                        <span>/ Fernanda Costa</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Vacinação</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="afternoon-schedules">
+                <div class="header-schedule">
+                    <div>
+                        <img src="./src/assets/cloudy.svg" alt="Sol da Tarde">
+                        <h2>Tarde</h2>
+                    </div>
+
+                    <div>
+                        <strong>13-18h</strong>
+                    </div>
+                </div>
+
+                <div class="schedule-day" class="border">
+                    <div class="customer-info">
+                        <h3>13:00</h3>
+                        <strong>Mel</strong>
+                        <span>/ João Souza</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Corte de Unhas</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+                </div>
+
+                <div class="schedule-day" class="border">
+                    <div class="customer-info">
+                        <h3>14:00</h3>
+                        <strong>Bella</strong>
+                        <span>/ Pedro Martins</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Aplicação de Anti-pulgas</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <div class="customer-info">
+                        <h3>15:00</h3>
+                        <strong>Simba</strong>
+                        <span>/ Juliana Rocha</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Tosa Higiênica</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="night-schedules">
+                <div class="header-schedule">
+                    <div>
+                        <img src="./src/assets/moon.svg" alt="Lua">
+                        <h2>Noite</h2>
+                    </div>
+
+                    <div>
+                        <strong>19-21h</strong>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <div class="customer-info">
+                        <h3>20:00</h3>
+                        <strong>Max</strong>
+                        <span>/ Camila Santos</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Limpeza de Dentes</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <aside>
+        <button id="new-schedule">NOVO AGENDAMENTO</button>
+    </aside>
+
+    <dialog>
+        <form action="" id="form-new-pet">
+
+            <div class="close-btn-div">
+                <img src="./src/assets/close.svg" alt="Botão de fechar" id="close-btn">
+            </div>
+
+            <div class="title-wrap">
+                <h1>Agende um atendimento</h1>
+                <p>Preencha os dados do cliente para realizar o agendamento:</p>
+            </div>
+
+            <div class="input-wrap">
+                <label for="name">Nome do tutor</label> <br>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="input-wrap">
+                <label for="pet-name">Nome do Pet</label> <br>
+                <input type="text" id="pet-name" name="pet-name">
+            </div>
+
+            <div class="input-wrap">
+                <label for="number">Telefone</label> <br>
+                <input type="text" id="number" name="number">
+            </div>
+
+            <div class="textarea-wrap">
+                <label for="description">Descrição do Serviço</label> <br>
+                <textarea name="description" id="description"></textarea>
+            </div>
+
+            <div class="date-wrap">
+                <div class="day-wrap">
+                    <label for="day">Data</label>
+                    <input type="date" name="day">
+                </div>
+                <div class="hour-wrap">
+                    <label for="hour">Hora</label>
+                    <select name="hour" id="hour">
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="btn-new-schedule">
+                <button>AGENDAR</button>
+            </div>
+
+        </form>
+
+    </dialog>
+
+    <script src="./src/styles/modal.js"></script>
+
+</body>
+</html>
