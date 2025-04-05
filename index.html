@@ -131,7 +131,7 @@
                     </div>
 
                     <div>
-                        <strong>09-12h</strong>
+                        <strong>19-21h</strong>
                     </div>
                 </div>
 
@@ -157,12 +157,75 @@
     </main>
 
     <aside>
-        <button>NOVO AGENDAMENTO</button>
+        <button id="new-schedule">NOVO AGENDAMENTO</button>
     </aside>
 
     <dialog>
-        
+        <form action="" id="form-new-pet">
+
+            <div class="close-btn-div">
+                <img src="./src/assets/close.svg" alt="Botão de fechar" id="close-btn">
+            </div>
+
+            <div class="title-wrap">
+                <h1>Agende um atendimento</h1>
+                <p>Preencha os dados do cliente para realizar o agendamento:</p>
+            </div>
+
+            <div class="input-wrap">
+                <label for="name">Nome do tutor</label> <br>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="input-wrap">
+                <label for="pet-name">Nome do Pet</label> <br>
+                <input type="text" id="pet-name" name="pet-name">
+            </div>
+
+            <div class="input-wrap">
+                <label for="number">Telefone</label> <br>
+                <input type="text" id="number" name="number">
+            </div>
+
+            <div class="textarea-wrap">
+                <label for="description">Descrição do Serviço</label> <br>
+                <textarea name="description" id="description"></textarea>
+            </div>
+
+            <div class="date-wrap">
+                <div class="day-wrap">
+                    <label for="day">Data</label>
+                    <input type="date" name="day">
+                </div>
+                <div class="hour-wrap">
+                    <label for="hour">Hora</label>
+                    <select name="hour" id="hour">
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                        <option value="21">21:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="btn-new-schedule">
+                <button>AGENDAR</button>
+            </div>
+
+        </form>
+
     </dialog>
+
+    <script src="./src/styles/modal.js"></script>
 
 </body>
 </html>

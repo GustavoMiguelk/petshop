@@ -1,0 +1,82 @@
+dialog{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.7);
+}
+
+#form-new-pet {
+    color: var(--content-secondary);
+    background: #23242C;
+    border-radius: .75rem;
+
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem 2.5rem 2.5rem 2.5rem;
+
+    display: grid;
+    gap: 1rem;
+
+    & input, textarea, select{
+        max-width: 600px;
+        background: #23242C;
+        color: var(--content-secondary);
+        width: 100%;
+        padding: .75rem ;
+        font-size: 1.2rem;
+
+        border: 1px solid var(--border-primary);
+        border-radius: 8px;
+    }
+
+    & textarea{
+        height: 100px;
+    }
+
+    & label{
+        color: white;
+        font-weight: bold;
+    }
+
+    & .date-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & #close-btn{
+        justify-content: end;
+        align-items: center;
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+
+    & .close-btn-div{
+        display: flex;
+        justify-content: end;
+    }
+
+    & .btn-new-schedule{
+        display: flex;
+        justify-content: end;
+    }
+
+    & button{
+        all: unset;
+        background-color: var(--content-brand);
+        color: black;
+        font-weight: bold;
+        text-align: center;
+
+        padding-block: 1rem;
+        border-radius: 8px;
+
+        width: 25%;
+        justify-content: end;
+    }
+}

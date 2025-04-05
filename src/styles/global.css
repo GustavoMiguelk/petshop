@@ -76,7 +76,7 @@ main {
     margin: auto;
 }
 
-form{
+form#date-schedule{
     display: flex;
     justify-content: space-between;
     align-items: center;
