@@ -37,3 +37,15 @@ section{
         gap: 1.5rem;
     }
 }
+
+.remove-schedule {
+    & p{
+        color: var(--content-tertiary);
+    }
+
+    & p:hover{
+        color: darkred;
+        text-decoration: underline;
+    }
+}
+

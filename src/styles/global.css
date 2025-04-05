@@ -40,7 +40,6 @@
 body{
     background-color: var(--background-primary);
     font-family: var(--inter);
-    padding: 5rem;
     color: var(--content-secondary);
 
     & h1, h2, h3, strong{
@@ -49,7 +48,30 @@ body{
 
 }
 
+header {
+    width: fit-content;
+    background-color: #2E2C30;
+    border-radius: 0 0 12px 0;
+
+    & h1{
+        padding: 1rem 1.25rem;
+
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        font-size: 1.25rem;
+        color: var(--content-brand);
+    }
+
+    & img{
+        width: 24px;
+        height: 24px;
+    }
+}
+
 main {
+    padding: 5rem;
     max-width: 1280px;
     margin: auto;
 }
@@ -76,5 +98,21 @@ form{
     & h1{
         font-size: 2rem;
     }
+}
+
+
+@media (max-width: 768px){
+    main {
+        padding: 1rem;
+    }
+
+    form{
+        flex-wrap: wrap;
+    }
+
+    .title-wrap h1{
+        font-size: 1.5rem;
+    }
+    
 }
 
