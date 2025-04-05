@@ -1,0 +1,39 @@
+section{
+    background-color: var(--background-tertiary);
+    border-radius: 10px;
+    margin-block: 1rem;
+}
+
+.header-schedule{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--border-primary);
+
+    & div {
+        display: flex;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+    }
+
+    & strong{
+        font-size: 1.5rem;
+    }
+}
+
+.schedule-day{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+
+    & .customer-info{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

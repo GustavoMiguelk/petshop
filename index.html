@@ -16,15 +16,136 @@
     <main>
         <article>
             <form id="date-schedule">
-                <h1>Sua agenda</h1>
-                <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+                <div class="title-wrap">
+                    <h1>Sua agenda</h1>
+                    <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+                </div>
+
+                <input type="date" name="date-schedule" id="date-schedule">
             </form>
 
-            <section>
+            <section id="morning-schedules">
                 <div class="header-schedule">
-                    img
+                    <div>
+                        <img src="./src/assets/sunset.svg" alt="Nascer do Nol">
+                        <h2>Manhã</h2>
+                    </div>
+
+                    <div>
+                        <strong>09-12h</strong>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <div class="customer-info">
+                        <h3>09:00</h3>
+                        <strong>Thor</strong>
+                        <span>/ Fernanda Costa</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Vacinação</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+
                 </div>
             </section>
+
+            <section id="afternoon-schedules">
+                <div class="header-schedule">
+                    <div>
+                        <img src="./src/assets/cloudy.svg" alt="Sol da Tarde">
+                        <h2>Tarde</h2>
+                    </div>
+
+                    <div>
+                        <strong>13-18h</strong>
+                    </div>
+                </div>
+
+                <div class="schedule-day" class="border">
+                    <div class="customer-info">
+                        <h3>13:00</h3>
+                        <strong>Mel</strong>
+                        <span>/ João Souza</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Corte de Unhas</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+                </div>
+
+                <div class="schedule-day" class="border">
+                    <div class="customer-info">
+                        <h3>14:00</h3>
+                        <strong>Bella</strong>
+                        <span>/ Pedro Martins</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Aplicação de Anti-pulgas</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <div class="customer-info">
+                        <h3>15:00</h3>
+                        <strong>Simba</strong>
+                        <span>/ Juliana Rocha</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Tosa Higiênica</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="night-schedules">
+                <div class="header-schedule">
+                    <div>
+                        <img src="./src/assets/moon.svg" alt="Lua">
+                        <h2>Noite</h2>
+                    </div>
+
+                    <div>
+                        <strong>09-12h</strong>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <div class="customer-info">
+                        <h3>20:00</h3>
+                        <strong>Max</strong>
+                        <span>/ Camila Santos</span>
+                    </div>
+
+                    <div class="service">
+                        <span>Limpeza de Dentes</span>
+                    </div>
+
+                    <div class="remove-schedule">
+                        <p>Remover Agendamento</p>
+                    </div>
+
+                </div>
+            </section>
+
         </article>
     </main>
 </body>
