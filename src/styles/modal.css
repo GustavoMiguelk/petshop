@@ -1,4 +1,6 @@
 dialog{
+    padding-top: 5rem;
+    padding-inline: 1rem;
     position: fixed;
     z-index: 1;
     left: 0;
