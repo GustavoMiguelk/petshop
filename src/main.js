@@ -8,3 +8,4 @@ import "./styles/modal.css"
 
 // JS
 import "./styles/modal.js"
+import "./modules/form/submit.js"
